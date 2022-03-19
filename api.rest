@@ -1,0 +1,82 @@
+POST https://data.mongodb-api.com/app/data-idhmq/endpoint/data/beta/action/find
+Content-Type: application/json
+Access-Control-Request-Headers: *
+api-key: uPwkjrBBvHDVJmaVbjXkKZjWLFVRWL2BeZ3yUFsXafaDCQv40UUVej6w5Rm86QvP
+
+{
+    "dataSource": "Cluster0",
+    "database": "resume-mdb",
+    "collection": "work"
+}
+
+###
+
+POST https://data.mongodb-api.com/app/data-idhmq/endpoint/data/beta/action/findOne
+Content-Type: application/json
+Access-Control-Request-Headers: *
+api-key: uPwkjrBBvHDVJmaVbjXkKZjWLFVRWL2BeZ3yUFsXafaDCQv40UUVej6w5Rm86QvP
+
+{
+    "dataSource": "Cluster0",
+    "database": "resume-mdb",
+    "collection": "work",
+    "filter" : {
+        "$oid" : "6233c41fb6d482006174091f"
+    }
+}
+
+### 
+
+POST https://data.mongodb-api.com/app/data-idhmq/endpoint/data/beta/action/insertOne
+Content-Type: application/json
+Access-Control-Request-Headers: *
+api-key: uPwkjrBBvHDVJmaVbjXkKZjWLFVRWL2BeZ3yUFsXafaDCQv40UUVej6w5Rm86QvP
+
+{
+    "dataSource": "Cluster0",
+    "database": "resume-mdb",
+    "collection": "work",
+    "document": {
+        "name": "Paul Lopez",
+        "title": "Developer/Engineer",
+        "email": "paullopez05@gmail.com",
+        "objective": "Seeking a position where I am able apply my technical problem-solving skills to modern front and back-end web development and process automation.",
+        "skills": {
+            "webdevelopment" : [
+                "Javascript", "Node.js", "Vue.js", "Express.js", "Git", "GitLab", "Bitbucket","Selenium", "Html/CSS", "Bootstrap", "Mysql", "Python", "Mongo DB"
+            ],
+            "itadministration" : [
+                "AWS", "Azure DevOps", "TFS", "Jira", "ServiceNow", "Windows Server", "Linux", "Exchange", "Active Directory", "MS SQL Database", "Citrix XenServer", "VMware", "Bash", "Powershell"
+            ]
+        },
+        "experience" : [
+            "623037f5a7633754efe5b2ff"
+        ]
+      }
+}
+
+###
+
+POST https://data.mongodb-api.com/app/data-idhmq/endpoint/data/beta/action/insertOne
+Content-Type: application/json
+Access-Control-Request-Headers: *
+api-key: uPwkjrBBvHDVJmaVbjXkKZjWLFVRWL2BeZ3yUFsXafaDCQv40UUVej6w5Rm86QvP
+
+{
+    "dataSource": "Cluster0",
+    "database": "resume-mdb",
+    "collection": "work",
+    "document": {
+        "location" : "Choice Hotels",
+        "position" : "Site Reliability Engineer",
+        "startdate" : "2020-08-01",
+        "enddate" : "2021-06-01",
+        "skillset" : [
+            "Monitor and alert on business applications for on-prem & AWS using App Dynamics, Orion, Prometheus, and Grafana.",
+            "Develop Python scripts using Selenium to automate site testing for the Choice Hotels website.",
+            "Deployed kubernetes clusters for the developing new monitoring tools for operations within the AWS environment using docker containers.",
+            "Developed applications to extend in house and 3rd party systems to streamline processes using api endpoints.",
+            "Provided working sessions to the operations team to train in coding on various languages within automation, troubleshooting, and skills development."
+        ]
+    }
+}

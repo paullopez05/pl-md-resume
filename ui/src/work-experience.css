@@ -1,0 +1,10 @@
+.test-case {
+    background-color: cadetblue;
+    color: #ffffff;
+    padding: 5px;
+}
+
+blockquote {
+    background-color: azure;
+    display: none;
+}
